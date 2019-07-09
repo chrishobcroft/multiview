@@ -84,1123 +84,329 @@
 
 <script>
   var video2 = document.getElementById('video2');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
-    hls.attachMedia(video2);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video2.canPlayType('application/vnd.apple.mpegurl')) {
-    video2.src = 'http://188.166.54.38:2001/stream/current.m3u8';
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
+  hls.attachMedia(video2);
 </script>
-
 
 <script>
   var video3 = document.getElementById('video3');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
-    hls.attachMedia(video3);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video3.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video3.canPlayType('application/vnd.apple.mpegurl')) {
-    video3.src = 'http://188.166.54.38:2002/stream/current.m3u8';
-    video3.addEventListener('loadedmetadata',function() {
-      video3.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
+  hls.attachMedia(video3);
 </script>
-
 
 <script>
   var video4 = document.getElementById('video4');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
-    hls.attachMedia(video4);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video4.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video4.canPlayType('application/vnd.apple.mpegurl')) {
-    video4.src = 'http://188.166.54.38:2003/stream/current.m3u8';
-    video4.addEventListener('loadedmetadata',function() {
-      video4.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
+  hls.attachMedia(video4);
 </script>
-
 
 <script>
   var video5 = document.getElementById('video5');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
-    hls.attachMedia(video5);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video5.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video5.canPlayType('application/vnd.apple.mpegurl')) {
-    video5.src = 'http://188.166.54.38:2004/stream/current.m3u8';
-    video5.addEventListener('loadedmetadata',function() {
-      video5.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
+  hls.attachMedia(video5);
 </script>
-
 
 <script>
   var video6 = document.getElementById('video6');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
-    hls.attachMedia(video6);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video6.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video6.canPlayType('application/vnd.apple.mpegurl')) {
-    video6.src = 'http://188.166.54.38:2005/stream/current.m3u8';
-    video6.addEventListener('loadedmetadata',function() {
-      video6.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
+  hls.attachMedia(video6);
 </script>
-
 
 <script>
   var video7 = document.getElementById('video7');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2007/stream/current.m3u8');
-    hls.attachMedia(video7);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video7.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video7.canPlayType('application/vnd.apple.mpegurl')) {
-    video7.src = 'http://188.166.54.38:2006/stream/current.m3u8';
-    video7.addEventListener('loadedmetadata',function() {
-      video7.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
+  hls.attachMedia(video7);
 </script>
-
 
 <script>
   var video8 = document.getElementById('video8');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2008/stream/current.m3u8');
-    hls.attachMedia(video8);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video8.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video8.canPlayType('application/vnd.apple.mpegurl')) {
-    video8.src = 'http://188.166.54.38:2007/stream/current.m3u8';
-    video8.addEventListener('loadedmetadata',function() {
-      video8.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
+  hls.attachMedia(video8);
 </script>
-
 
 <script>
   var video9 = document.getElementById('video9');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
-    hls.attachMedia(video9);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video9.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video9.canPlayType('application/vnd.apple.mpegurl')) {
-    video9.src = 'http://188.166.54.38:2008/stream/current.m3u8';
-    video9.addEventListener('loadedmetadata',function() {
-      video9.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
+  hls.attachMedia(video9);
 </script>
-
 
 <script>
   var video10 = document.getElementById('video10');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
-    hls.attachMedia(video10);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video10.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video10.canPlayType('application/vnd.apple.mpegurl')) {
-    video10.src = 'http://188.166.54.38:2000/stream/current.m3u8';
-    video10.addEventListener('loadedmetadata',function() {
-      video10.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
+  hls.attachMedia(video10);
 </script>
-
 
 <script>
   var video11 = document.getElementById('video11');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
-    hls.attachMedia(video11);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video11.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video11.canPlayType('application/vnd.apple.mpegurl')) {
-    video11.src = 'http://188.166.54.38:2001/stream/current.m3u8';
-    video11.addEventListener('loadedmetadata',function() {
-      video11.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
+  hls.attachMedia(video11);
 </script>
-
 
 <script>
   var video12 = document.getElementById('video12');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
-    hls.attachMedia(video12);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video12.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video12.canPlayType('application/vnd.apple.mpegurl')) {
-    video12.src = 'http://188.166.54.38:2002/stream/current.m3u8';
-    video12.addEventListener('loadedmetadata',function() {
-      video12.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
+  hls.attachMedia(video12);
 </script>
-
 
 <script>
   var video13 = document.getElementById('video13');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
-    hls.attachMedia(video13);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video13.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video13.canPlayType('application/vnd.apple.mpegurl')) {
-    video13.src = 'http://188.166.54.38:2003/stream/current.m3u8';
-    video13.addEventListener('loadedmetadata',function() {
-      video13.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
+  hls.attachMedia(video13);
 </script>
-
 
 <script>
   var video14 = document.getElementById('video14');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
-    hls.attachMedia(video14);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video14.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video14.canPlayType('application/vnd.apple.mpegurl')) {
-    video14.src = 'http://188.166.54.38:2004/stream/current.m3u8';
-    video14.addEventListener('loadedmetadata',function() {
-      video14.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
+  hls.attachMedia(video14);
 </script>
-
 
 <script>
   var video15 = document.getElementById('video15');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
-    hls.attachMedia(video15);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video15.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video15.canPlayType('application/vnd.apple.mpegurl')) {
-    video15.src = 'http://188.166.54.38:2005/stream/current.m3u8';
-    video15.addEventListener('loadedmetadata',function() {
-      video15.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
+  hls.attachMedia(video15);
 </script>
-
 
 <script>
   var video16 = document.getElementById('video16');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2007/stream/current.m3u8');
-    hls.attachMedia(video16);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video16.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video16.canPlayType('application/vnd.apple.mpegurl')) {
-    video16.src = 'http://188.166.54.38:2006/stream/current.m3u8';
-    video16.addEventListener('loadedmetadata',function() {
-      video16.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
+  hls.attachMedia(video16);
 </script>
-
 
 <script>
   var video17 = document.getElementById('video17');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2008/stream/current.m3u8');
-    hls.attachMedia(video17);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video17.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video17.canPlayType('application/vnd.apple.mpegurl')) {
-    video17.src = 'http://188.166.54.38:2007/stream/current.m3u8';
-    video17.addEventListener('loadedmetadata',function() {
-      video17.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
+  hls.attachMedia(video17);
 </script>
-
 
 <script>
   var video18 = document.getElementById('video18');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
-    hls.attachMedia(video18);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video18.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video18.canPlayType('application/vnd.apple.mpegurl')) {
-    video18.src = 'http://188.166.54.38:2008/stream/current.m3u8';
-    video18.addEventListener('loadedmetadata',function() {
-      video18.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
+  hls.attachMedia(video18);
 </script>
-
 
 <script>
   var video19 = document.getElementById('video19');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
-    hls.attachMedia(video19);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video19.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video19.canPlayType('application/vnd.apple.mpegurl')) {
-    video19.src = 'http://188.166.54.38:2000/stream/current.m3u8';
-    video19.addEventListener('loadedmetadata',function() {
-      video19.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
+  hls.attachMedia(video19);
 </script>
-
 
 <script>
   var video20 = document.getElementById('video20');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
-    hls.attachMedia(video20);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video20.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video20.canPlayType('application/vnd.apple.mpegurl')) {
-    video20.src = 'http://188.166.54.38:2001/stream/current.m3u8';
-    video20.addEventListener('loadedmetadata',function() {
-      video20.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
+  hls.attachMedia(video20);
 </script>
-
 
 <script>
   var video21 = document.getElementById('video21');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
-    hls.attachMedia(video21);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video21.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video21.canPlayType('application/vnd.apple.mpegurl')) {
-    video21.src = 'http://188.166.54.38:2002/stream/current.m3u8';
-    video21.addEventListener('loadedmetadata',function() {
-      video21.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
+  hls.attachMedia(video21);
 </script>
-
 
 <script>
   var video22 = document.getElementById('video22');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
-    hls.attachMedia(video22);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video22.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video22.canPlayType('application/vnd.apple.mpegurl')) {
-    video22.src = 'http://188.166.54.38:2003/stream/current.m3u8';
-    video22.addEventListener('loadedmetadata',function() {
-      video22.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
+  hls.attachMedia(video22);
 </script>
-
 
 <script>
   var video23 = document.getElementById('video23');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
-    hls.attachMedia(video23);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video23.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video23.canPlayType('application/vnd.apple.mpegurl')) {
-    video23.src = 'http://188.166.54.38:2004/stream/current.m3u8';
-    video23.addEventListener('loadedmetadata',function() {
-      video23.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
+  hls.attachMedia(video23);
 </script>
-
 
 <script>
   var video24 = document.getElementById('video24');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
-    hls.attachMedia(video24);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video24.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video24.canPlayType('application/vnd.apple.mpegurl')) {
-    video24.src = 'http://188.166.54.38:2005/stream/current.m3u8';
-    video24.addEventListener('loadedmetadata',function() {
-      video24.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
+  hls.attachMedia(video24);
 </script>
-
 
 <script>
   var video25 = document.getElementById('video25');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2007/stream/current.m3u8');
-    hls.attachMedia(video25);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video25.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video25.canPlayType('application/vnd.apple.mpegurl')) {
-    video25.src = 'http://188.166.54.38:2006/stream/current.m3u8';
-    video25.addEventListener('loadedmetadata',function() {
-      video25.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
+  hls.attachMedia(video25);
 </script>
-
 
 <script>
   var video26 = document.getElementById('video26');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2008/stream/current.m3u8');
-    hls.attachMedia(video26);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video26.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video26.canPlayType('application/vnd.apple.mpegurl')) {
-    video26.src = 'http://188.166.54.38:2007/stream/current.m3u8';
-    video26.addEventListener('loadedmetadata',function() {
-      video26.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
+  hls.attachMedia(video26);
 </script>
-
 
 <script>
   var video27 = document.getElementById('video27');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
-    hls.attachMedia(video27);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video27.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video27.canPlayType('application/vnd.apple.mpegurl')) {
-    video27.src = 'http://188.166.54.38:2008/stream/current.m3u8';
-    video27.addEventListener('loadedmetadata',function() {
-      video27.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
+  hls.attachMedia(video27);
 </script>
-
 
 <script>
   var video28 = document.getElementById('video28');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
-    hls.attachMedia(video28);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video28.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video28.canPlayType('application/vnd.apple.mpegurl')) {
-    video28.src = 'http://188.166.54.38:2000/stream/current.m3u8';
-    video28.addEventListener('loadedmetadata',function() {
-      video28.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
+  hls.attachMedia(video28);
 </script>
-
 
 <script>
   var video29 = document.getElementById('video29');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
-    hls.attachMedia(video29);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video29.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video29.canPlayType('application/vnd.apple.mpegurl')) {
-    video29.src = 'http://188.166.54.38:2001/stream/current.m3u8';
-    video29.addEventListener('loadedmetadata',function() {
-      video29.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
+  hls.attachMedia(video29);
 </script>
-
 
 <script>
   var video30 = document.getElementById('video30');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
-    hls.attachMedia(video30);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video30.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video30.canPlayType('application/vnd.apple.mpegurl')) {
-    video30.src = 'http://188.166.54.38:2002/stream/current.m3u8';
-    video30.addEventListener('loadedmetadata',function() {
-      video30.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
+  hls.attachMedia(video30);
 </script>
-
 
 <script>
   var video31 = document.getElementById('video31');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
-    hls.attachMedia(video31);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video31.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video31.canPlayType('application/vnd.apple.mpegurl')) {
-    video31.src = 'http://188.166.54.38:2003/stream/current.m3u8';
-    video31.addEventListener('loadedmetadata',function() {
-      video31.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
+  hls.attachMedia(video31);
 </script>
-
 
 <script>
   var video32 = document.getElementById('video32');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
-    hls.attachMedia(video32);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video32.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video32.canPlayType('application/vnd.apple.mpegurl')) {
-    video32.src = 'http://188.166.54.38:2004/stream/current.m3u8';
-    video32.addEventListener('loadedmetadata',function() {
-      video32.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
+  hls.attachMedia(video32);
 </script>
-
 
 <script>
   var video33 = document.getElementById('video33');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
-    hls.attachMedia(video33);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video33.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video33.canPlayType('application/vnd.apple.mpegurl')) {
-    video33.src = 'http://188.166.54.38:2005/stream/current.m3u8';
-    video33.addEventListener('loadedmetadata',function() {
-      video33.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
+  hls.attachMedia(video33);
 </script>
-
 
 <script>
   var video34 = document.getElementById('video34');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2007/stream/current.m3u8');
-    hls.attachMedia(video34);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video34.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video34.canPlayType('application/vnd.apple.mpegurl')) {
-    video34.src = 'http://188.166.54.38:2006/stream/current.m3u8';
-    video34.addEventListener('loadedmetadata',function() {
-      video34.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
+  hls.attachMedia(video34);
 </script>
-
 
 <script>
   var video35 = document.getElementById('video35');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2008/stream/current.m3u8');
-    hls.attachMedia(video35);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video35.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video35.canPlayType('application/vnd.apple.mpegurl')) {
-    video35.src = 'http://188.166.54.38:2007/stream/current.m3u8';
-    video35.addEventListener('loadedmetadata',function() {
-      video35.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
+  hls.attachMedia(video35);
 </script>
-
 
 <script>
   var video36 = document.getElementById('video36');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
-    hls.attachMedia(video36);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video36.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video36.canPlayType('application/vnd.apple.mpegurl')) {
-    video36.src = 'http://188.166.54.38:2008/stream/current.m3u8';
-    video36.addEventListener('loadedmetadata',function() {
-      video36.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
+  hls.attachMedia(video36);
 </script>
-
 
 <script>
   var video37 = document.getElementById('video37');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
-    hls.attachMedia(video37);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video37.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video37.canPlayType('application/vnd.apple.mpegurl')) {
-    video37.src = 'http://188.166.54.38:2000/stream/current.m3u8';
-    video37.addEventListener('loadedmetadata',function() {
-      video37.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
+  hls.attachMedia(video37);
 </script>
-
 
 <script>
   var video38 = document.getElementById('video38');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
-    hls.attachMedia(video38);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video38.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video38.canPlayType('application/vnd.apple.mpegurl')) {
-    video38.src = 'http://188.166.54.38:2001/stream/current.m3u8';
-    video38.addEventListener('loadedmetadata',function() {
-      video38.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
+  hls.attachMedia(video38);
 </script>
-
 
 <script>
   var video39 = document.getElementById('video39');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
-    hls.attachMedia(video39);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video39.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video39.canPlayType('application/vnd.apple.mpegurl')) {
-    video39.src = 'http://188.166.54.38:2002/stream/current.m3u8';
-    video39.addEventListener('loadedmetadata',function() {
-      video39.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
+  hls.attachMedia(video39);
 </script>
-
 
 <script>
   var video40 = document.getElementById('video40');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
-    hls.attachMedia(video40);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video40.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video40.canPlayType('application/vnd.apple.mpegurl')) {
-    video40.src = 'http://188.166.54.38:2003/stream/current.m3u8';
-    video40.addEventListener('loadedmetadata',function() {
-      video40.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
+  hls.attachMedia(video40);
 </script>
-
 
 <script>
   var video41 = document.getElementById('video41');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
-    hls.attachMedia(video41);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video41.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video41.canPlayType('application/vnd.apple.mpegurl')) {
-    video41.src = 'http://188.166.54.38:2004/stream/current.m3u8';
-    video41.addEventListener('loadedmetadata',function() {
-      video41.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
+  hls.attachMedia(video41);
 </script>
-
 
 <script>
   var video42 = document.getElementById('video42');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
-    hls.attachMedia(video42);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video42.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video42.canPlayType('application/vnd.apple.mpegurl')) {
-    video42.src = 'http://188.166.54.38:2005/stream/current.m3u8';
-    video42.addEventListener('loadedmetadata',function() {
-      video42.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
+  hls.attachMedia(video42);
 </script>
-
 
 <script>
   var video43 = document.getElementById('video43');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2007/stream/current.m3u8');
-    hls.attachMedia(video43);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video43.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video43.canPlayType('application/vnd.apple.mpegurl')) {
-    video43.src = 'http://188.166.54.38:2006/stream/current.m3u8';
-    video43.addEventListener('loadedmetadata',function() {
-      video43.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
+  hls.attachMedia(video43);
 </script>
-
 
 <script>
   var video44 = document.getElementById('video44');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2008/stream/current.m3u8');
-    hls.attachMedia(video44);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video44.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video44.canPlayType('application/vnd.apple.mpegurl')) {
-    video44.src = 'http://188.166.54.38:2007/stream/current.m3u8';
-    video44.addEventListener('loadedmetadata',function() {
-      video44.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
+  hls.attachMedia(video44);
 </script>
-
 
 <script>
   var video45 = document.getElementById('video45');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
-    hls.attachMedia(video45);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video45.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video45.canPlayType('application/vnd.apple.mpegurl')) {
-    video45.src = 'http://188.166.54.38:2008/stream/current.m3u8';
-    video45.addEventListener('loadedmetadata',function() {
-      video45.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
+  hls.attachMedia(video45);
 </script>
-
 
 <script>
   var video46 = document.getElementById('video46');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2001/stream/current.m3u8');
-    hls.attachMedia(video46);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video46.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video46.canPlayType('application/vnd.apple.mpegurl')) {
-    video46.src = 'http://188.166.54.38:2000/stream/current.m3u8';
-    video46.addEventListener('loadedmetadata',function() {
-      video46.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2004/stream/current.m3u8');
+  hls.attachMedia(video46);
 </script>
-
 
 <script>
   var video47 = document.getElementById('video47');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2002/stream/current.m3u8');
-    hls.attachMedia(video47);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video47.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video47.canPlayType('application/vnd.apple.mpegurl')) {
-    video47.src = 'http://188.166.54.38:2001/stream/current.m3u8';
-    video47.addEventListener('loadedmetadata',function() {
-      video47.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2005/stream/current.m3u8');
+  hls.attachMedia(video47);
 </script>
-
 
 <script>
   var video48 = document.getElementById('video48');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://188.166.54.38:2003/stream/current.m3u8');
-    hls.attachMedia(video48);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video48.play();
-  });
- }
- // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
- // This is using the built-in support of the plain video element, without using hls.js.
- // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
- // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
-  else if (video48.canPlayType('application/vnd.apple.mpegurl')) {
-    video48.src = 'http://188.166.54.38:2002/stream/current.m3u8';
-    video48.addEventListener('loadedmetadata',function() {
-      video48.play();
-    });
-  }
+  var hls = new Hls();
+  hls.loadSource('http://188.166.54.38:2006/stream/current.m3u8');
+  hls.attachMedia(video48);
 </script>
