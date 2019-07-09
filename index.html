@@ -4,7 +4,7 @@
 
 <div class="row">
   <div class="column">
-    <video width=256 height=144 id="video0" controls autoplay=false></video>
+    <video width=256 height=144 id="video0" controls></video>
     <video width=256 height=144 id="video1" controls></video>
     <video width=256 height=144 id="video2" controls></video>
     <video width=256 height=144 id="video3" controls></video>
@@ -75,7 +75,7 @@
     hls.loadSource('http://188.166.54.38:2000/stream/current.m3u8');
     hls.attachMedia(video0);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video0.play();
+//      video0.play();
   });
  }
  // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
